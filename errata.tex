@@ -1,0 +1,121 @@
+% Errata from  Linear Algebra by Greub
+% By John Peloquin
+\documentclass[letterpaper,12pt]{article}
+\usepackage{amsmath,amssymb,amsthm,enumitem,fourier,stmaryrd}
+
+\newcommand{\from}{\leftarrow}
+
+\newcommand{\union}{\cup}
+
+\newcommand{\sprod}[2]{\langle#1,#2\rangle}
+
+% Meta
+\title{Errata from \textit{Linear Algebra}}
+\author{John Peloquin}
+\date{}
+
+\begin{document}
+\maketitle
+\section*{Introduction}
+This document contains errata from~\cite{greub}. Locations in the text are indicated by coordinates~\((p,n)\), where \(p\)~is a page number and \(n\)~is a line number on page~\(p\). Positive line numbers count from the top of the page, whereas negative line numbers count from the bottom of the page. Displayed equations, diagrams, and figures are counted as single lines.
+
+Minor, purely typographical inconsistencies like those between ``\(1\ldots n\)'' and ``\(1,\ldots,n\)'', or between ``family \(x_{\alpha}\)'' and ``family \((x_{\alpha})\)'' and ``family \(\{x_{\alpha}\}\)'', are not listed but occur frequently.
+
+Errata are currently only listed for Chapters 0--IV.
+
+\section*{Chapter~0}
+\begin{itemize}
+\item (2, 8): in the definition of subgroup, ``subset~\(H\)'' should be ``nonempty subset~\(H\)''.
+\item (3, -12): a homomorphism between fields must also preserve the multiplicative identity.
+\item (3, -13): a subfield must also contain the multiplicative identity.
+\end{itemize}
+
+\section*{Chapter~I}
+\begin{itemize}
+\item (9, 16): in the definition of linear dependence, ``non-trivial linear combination of the~\(x_{\alpha}\)'' should be ``non-trivial linear combination of the~\(x_{\alpha}\) equal to zero''.
+\item (12, 1): \(\lambda^i=0\) should be \(\lambda^i\ne 0\).
+\item (12, 5): throughout the proof of~(ii), \(n\)~should be~\(m\).
+\item (12, -5): ``The a partial order'' should be ``A partial order''.
+\item (12, -4): ``maximal element'' should be ``upper bound''.
+\item (13, 8): \(x\in E\) should be \(x\in S-T\).
+\item (13, 9), (13, 10): \(T\union x\) should be \(T\union\{x\}\) and \(x\union T\) should be \(\{x\}\union T\).
+\item (14, 1): ``element~\(f_a\)'' should be ``elements~\(f_a\)''.
+\item (14, 3), (14, 5): in the displayed equations, \(j=1\) should be \(i=1\).
+\item (15, -2): in problem~10, \(\{x_{\alpha}\}_{\alpha\ne\beta}\) should be \(\{a\}\union\{x_{\alpha}\}_{\alpha\ne\beta}\).
+\item (20, 16): ``\(\varphi(S)\)~is a system of generators for~\(\varphi(S)\)'' should be ``\(\varphi(S)\)~is a system of generators for~\(F\)''.
+\item (22, -15): in part~(v) of Problem~5, the concept of a generated subspace has not yet been defined.
+\item (23, 7): in the definition of subspace, ``subset of~\(E\)'' should be ``nonempty subset of~\(E\)''.
+\item (27, -11): in the displayed equation, \(\lambda_i\)~should be~\(\lambda^i\) (two occurrences). Also, it should be noted that \(y_i\in E_1\) and \(z_i\in E_2\).
+\item (29, -16): ``\emph{canonical projection} of~\(E\) onto~\(E_1\)'' should be ``\emph{canonical projection} of~\(E\) onto~\(E/E_1\)''.
+\item (40, -8): in the second displayed equation in problem~6, \(u\in E_2'\) should be \(y\in E_2'\).
+\end{itemize}
+
+\section*{Chapter~II}
+\begin{itemize}
+\item (47, -6): ``assume that there'' should be ``assume that''.
+\item (52, -8): \(\psi:E_1\from F\) should be \(\psi:E\from F\).
+\item (52, -3): ``left inverse'' should be ``left inverse~\(\psi\)''.
+\item (53, 13): ``inverse'' should be ``left inverse''.
+\item (53, -1): in problem~1, the inclusion \(L(E;F)\subset C(E;F)\) is wrong.
+\item (59, -5): in~(2.25), it should be noted that \(\delta_{\varrho\sigma}\)~is a Kronecker delta.\footnote{This notation is defined later in a footnote on p.~76.}
+\item (62, 10): in~(2.34), \(y\)~should be~\(y_j\).
+\item (63, -7): in problem~7, ``second set'' should be ``disjoint set''.
+\item (67, -1): in the displayed equation, \(y^*\in F\) should be \(y^*\in F^*\).
+\item (68, -7): in the displayed equation, \(\langle y^*(\varphi+\psi)x\rangle\) should be \(\sprod{y^*}{(\varphi+\psi)x}\).
+\item (76, 9): ``imension'' should be ``dimension''.
+\item (76, -7): in the displayed equation (and really the rest of subsection~2.31), \(\varphi^{\mu}_{\nu}\)~should be~\(\varphi^{\nu}_{\mu}\).
+\item (77, -7): \(\varphi\)~should be~\(\Phi\).
+\end{itemize}
+
+\section*{Chapter~III}
+\begin{itemize}
+\item (83, -10): in the displayed equation, \((b^{\mu}_1\,\ldots\,b^{\mu}_n)\) should be \((\alpha^{\mu}_1\,\ldots\,\alpha^{\mu}_n)\).
+\item (84, -7): ``columns of the matrix~\(\alpha^{\mu}_{\nu}\)'' should be ``columns of the matrix~\(\alpha^{*\mu}_{\nu}\)''.
+\item (84, -6): \(y=y^{*\mu}\) should be \(y^*=y^{*\mu}\).
+\item (85, 13): in the displayed equation, it should be noted that \(A=(\alpha^{\mu}_{\nu})\).
+\item (88, 1): in the main theorem, ``system of \(n\) equations in \(m\) unknowns'' should be ``system of \(m\) equations in \(n\) unknowns''.
+\item (89, 12): it should be noted that \(\dim E=n\) and \(\dim F=m\).
+\item (89, -8): in the displayed equation, \(a^{\mu}_{\nu}\)~should be~\(\alpha^{\mu}_{\nu}\).
+\item (91, 5): ``\(E\) automorphism of~\(E\)'' should be ``automorphism of~\(E\)''.
+\item (91, 9): in the displayed equation, \(M(\varphi)^{-1}\)~should be~\(M(\varphi^{-1})\).
+\item (91, -3): in problem~3, ``linear transformation'' should be ``a linear transformation''.
+\item (93, -13): ``inverse of the matrix of the transformation \(x_{\nu}\to\bar{x}_{\nu}\)'' should be ``transpose of the inverse of the matrix of the transformation \(x_{\nu}\to\bar{x}_{\nu}\)''.
+\item (95, 12): \(\mu=1,\ldots,n\) should be \(\mu=1,\ldots,m\).
+\item (96, 1): multiplication of basis vectors by nonzero scalars should be added to the list of elementary basis transformations.
+\item (96, -7): \(2\leqq\nu\leqq m\) should be \(2\leqq\nu\leqq n\).
+\item (98, 3): (3.36)~should be
+\[\xi^r=(\kappa^r_r)^{-1}\left(\omega^r-\sum_{\nu=r+1}^n\kappa^r_{\nu}\xi^{\nu}\right)\]
+\end{itemize}
+
+\section*{Chapter~IV}
+\begin{itemize}
+\item (105, -8): ``Proposition~II'' should be ``Proposition~III''.
+\item (106, 5): ``(4.14)'' should be ``(4.12)''.
+\item (107, 13): in~(4.14), \(p=\dim E\) should be \(p=\dim E_1\).
+\item (109, 1): the problem numbers on this page should be incremented by~\(1\).
+\item (109, 10): in problem~6, it must be assumed that \(E\)~is real.
+\item (109, -11): in problem~8, the trace of a linear transformation has not yet been defined.
+\item (113, 1): ``(4.21)'' should be ``(4.22)''.
+\item (113, -10): in the displayed equation, \({x^*}_i\)~should be~\(x^{*i}\).
+\item (115, 1): ``(4.14)'' should be ``(4.12)''.
+\item (115, 4): in the displayed equation, \(\widehat{\varphi a_j}\)~should be~\(\widehat{\varphi a_i}\).
+\item (115, 9): it should be noted that \(M(\varphi)=(\alpha^{\mu}_{\nu})\).
+\item (115, -10): the displayed equation should be \(\beta^i_j=\det C^j_i\).
+\item (116, 11): ``(4.36)'' should be ``(4.38)''.
+\item (116, -1): in the displayed matrix~\(B^j_i\), the first column should have entries \(1,\alpha^j_1,\ldots,\alpha^j_{i-1},\alpha^j_{i+1},\ldots,\alpha^j_n\).
+\item (117, 3): ``(4.38)'' should be ``(4.16)'', or a reference to Problem~6.
+\item (117, 7): ``(4.35) and (4.30)'' should be ``(4.38) and (4.40)''.
+\item (117, -14): ``minor'' should be ``submatrix''.
+\item (122, 2): on the third line of the displayed equation, \(\sigma\)~should be~\(\varrho\).
+\item (130, -14): in problem~11, it must be assumed that \(E\)~is real.
+\item (135, -3): ``4.30'' should be ``4.29''.
+\item (136, -6): ``4.17'' should be ``4.16'', and it should be noted that \(\xi^i_{\nu}\)~are the components of~\(x_{\nu}\) with respect to some basis.
+\item (139, -13): \((a_1',b_2\ldots b_n)\) should be \((a_1',b_3\ldots b_n)\).
+\item (139, -10): in the displayed equation, \(i=1\ldots n\) should be \(i=1\ldots n-1\).
+\end{itemize}
+
+% References
+\begin{thebibliography}{0}
+\bibitem{greub} Greub, W. \textit{Linear Algebra}, 4th~ed. Springer, 1975.
+\end{thebibliography}
+\end{document}
