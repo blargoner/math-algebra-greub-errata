@@ -3,11 +3,18 @@
 \documentclass[letterpaper,12pt]{article}
 \usepackage{amsmath,amssymb,amsthm,enumitem,fourier,stmaryrd}
 
+\renewcommand{\H}{\mathbb{H}}
+
 \newcommand{\from}{\leftarrow}
 
+\DeclareMathOperator{\tr}{tr}
+
 \newcommand{\union}{\cup}
+\newcommand{\after}{\circ}
 
 \newcommand{\sprod}[2]{\langle#1,#2\rangle}
+\newcommand{\iprod}[2]{(#1,#2)}
+\newcommand{\oc}[1]{#1^{\perp}}
 
 % Meta
 \title{Errata from \textit{Linear Algebra}}
@@ -21,7 +28,7 @@ This document contains errata from~\cite{greub}. Locations in the text are indic
 
 Minor, purely typographical inconsistencies like those between ``\(1\ldots n\)'' and ``\(1,\ldots,n\)'', or between ``family \(x_{\alpha}\)'' and ``family \((x_{\alpha})\)'' and ``family \(\{x_{\alpha}\}\)'', are not listed but occur frequently.
 
-Errata are currently only listed for Chapters 0--VII (except \S~3 of Chapter~VI).
+Errata are currently only listed for Chapters 0--VIII (except \S~3 of Chapter~VI and \S~7 of Chapter~VIII).
 
 \section*{Chapter~0}
 \begin{itemize}
@@ -150,6 +157,37 @@ Errata are currently only listed for Chapters 0--VII (except \S~3 of Chapter~VI)
 \item (206, 14): ``least upper bound'' should be ``least nonnegative upper bound'' to account for the case \(E=0\) where there are no unit vectors.
 \item (207, 7): ``naturaltopology'' should be ``natural topology''.
 \item (210, 15): throughout subsection~7.24, it should be assumed that \(A\ne 0\).
+\end{itemize}
+
+\section*{Chapter~VIII}
+\begin{itemize}
+\item (217, 13): the concept of a metric tensor has not yet been defined.
+\item (217, 14): in the displayed equation, \(\displaystyle\sum_{\nu}\)~should be~\(\displaystyle\sum_{\lambda}\).
+\item (220, -1): in problem~1, equality holds only if \(\psi=\lambda\varphi\) or \(\varphi=\lambda\psi\).
+\item (223, -2): in~(8.22), \(\lambda-\lambda_i\) should be \(\lambda_i-\lambda\).
+\item (226, 17): in problem~11, the concept of a rotation has not yet been defined.
+\item (227, 14): \(E_1\in\oc{E_2}\) should be \(E_1\subset\oc{E_2}\).
+\item (231, 7): the proof of the normal form~(8.35) is incorrect because it is not true in general that the~\(a_n\) defined form an orthonormal basis of the space.
+\item (231, -5): ``Proposition~II'' should be ``Proposition~III''.
+\item (234, 4): in the displayed equation, \(a^{\kappa}_{\mu}\)~should be~\(\alpha^{\kappa}_{\mu}\).
+\item (234, -16): ``\emph{rotation}'' should be ``\emph{rotation}~\(\varphi\)''.
+\item (234, -10): it should be assumed that \(e\ne 0\).
+\item (234, -9): ``sec.~4, 17'' should be ``sec.~4.17''.
+\item (238, -7): in~(8.40), the second equation should be \(\sin\theta=-\tfrac{1}{2}\tr(j\after\varphi)\).
+\item (239, 17): in the displayed equation, ``\(\equiv\)''~should be~``\(=\)''.
+\item (240, -13): ``see~8.21'' should be ``sec.~8.21''.
+\item (241, 6): in~(8.49), \(x\)~should be~\(u\).
+\item (242, -13): in the displayed equation, ``\(\equiv\)''~should be~``\(=\)''.
+\item (243, 7): \(E\)~should be~\(e\).
+\item (243, -5): ``see~8.21'' should be ``sec.~8.23''.
+\item (243, -4): in the displayed equation, \((z,\tau,z)\) should be~\(\iprod{z}{\tau z}\).
+\item (243, -2): it should be noted that \(\Delta\)~is the positive normed determinant function in~\(E_1\).
+\item (244, -11): \(F_1\)~should be~\(F\).
+\item (245, 8): in the displayed equation, \(b\)~should be~\(b_1\).
+\item (245, -10), (245, -5): ``(8.53)'' should be ``(8.54)''.
+\item (246, 10), (246, -10): in problems 3 and~5, ``plane'' should be ``plane~\(E\)''.
+\item (247, -1): \(f\)~should be defined so that \(f(0)=0\).
+\item (248, -8): in problem~16, \(E\)~should be~\(\H\).
 \end{itemize}
 
 % References
