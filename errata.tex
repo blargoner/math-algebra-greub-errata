@@ -14,6 +14,8 @@
 \newcommand{\bigdsum}{\bigoplus}
 \newcommand{\tprod}{\otimes}
 \newcommand{\bigtprod}{\bigotimes}
+\newcommand{\eprod}{\wedge}
+\newcommand{\bigeprod}{\bigwedge}
 
 \newcommand{\sprod}[2]{\langle#1,#2\rangle}
 \newcommand{\iprod}[2]{(#1,#2)}
@@ -219,7 +221,7 @@ and it should be noted that \(z_k=x_k+iy_k\).
 % Multilinear algebra
 \newpage
 \part*{Multilinear Algebra}
-Errata are currently only listed for Chapters~1--4 (except \S~4,8--17 of Chapter~2). As above, minor purely typographical inconsistencies are not listed.
+Errata are currently only listed for Chapters~1--5 (except \S~4,8--17 of Chapter~2 and \S~15--28 of Chapter~5). Again, minor purely typographical inconsistencies are not listed.
 
 \section*{Chapter~1}
 \begin{itemize}
@@ -239,7 +241,7 @@ should be
 \item (14, -1): \(\pi_{\alpha}:E\to E_{\alpha}\) should be \(\pi_{\alpha}:\widetilde{E}\to E_{\alpha}\).
 \item (17, 11): in the displayed equation, it should be noted that \(x_{\alpha}\in E_{\alpha}\) and \(y_{\beta}\in F_{\beta}\).
 \item (22, -9): in Corollary~III, \(L(E\tprod F;E'\tprod F)\) should be \(L(E\tprod F;E'\tprod F')\).
-\item (22, -8): in Corollary~III, the claim is not shown in section~1.27, where it is also assumed that \(E'\) and~\(F'\) are finite-dimensional.
+\item (22, -8): in Corollary~III, the claim is not shown in subsection~1.27, where it is also assumed that \(E'\) and~\(F'\) are finite-dimensional.
 \item (25, 9): in problem~1(a), the ``only if'' part of the claim is false.
 \item (30, 13), (31, 11): it is false that \(\Phi\tprod\Psi\)~is nondegenerate only if \(\Phi\) and~\(\Psi\) are nondegenerate.
 \item (34, -2): it should be assumed that \(x^*\ne 0\).
@@ -250,7 +252,7 @@ should be
 \item (37, -3): \((\alpha,\beta)\) should be \(\alpha\tprod\beta\).
 \item (38, 3): \(F:A\times A\to L(A;A)\) should be \(F:A\tprod A\to L(A;A)\).
 \item (38, 8): \(L(A\tprod A)\) should be \(A\tprod A\).
-\item (38, -5): in section~1.30, it should be assumed that \(E\ne 0\).
+\item (38, -5): in subsection~1.30, it should be assumed that \(E\ne 0\).
 \item (39, 3): \(\Omega\)~should be the bilinear map induced by~\(\Omega\).
 \item (40, 5): in problem~2, it should be assumed that \(E,F\ne 0\).
 \item (40, -5): in problem~3, it should be assumed that \(E\)~is oriented.
@@ -275,12 +277,13 @@ should be
 \item (69, -10): the reference to~(3.8) should be deleted.
 \item (72, 6): ``noncommutative'' should be ``noncommutative in general''.
 \item (72, -5): \(\Phi^i_j(\omega)\)~should be~\(C^i_j(\omega)\).
-\item (74, 1): in many problems in this section, the order of dual spaces should be swapped to be consistent with the rest of the chapter; for example, \(\bigtprod(E,E^*)\) should be \(\bigtprod(E^*,E)\).
+\item (74, 1): in many problems in this subsection, the order of dual spaces should be swapped to be consistent with the rest of the chapter; for example, \(\bigtprod(E,E^*)\) should be \(\bigtprod(E^*,E)\).
 \item (74, -9): in problem~7, it should be assumed that \(E\)~is finite-dimensional.
 \item (74, -5): in problem~8, it should be assumed that \(E\)~is finite-dimensional.
 \item (77, -3): in problem~5, the scalars \(g_{\nu\mu}=\iprod{e_{\nu}}{e_{\mu}}\) should be defined.
 \item (78, -6): ``noncommutative'' should be ``noncommutative in general''.
 \item (79, 6): it should be clarified how \(i_{\nu}(h)\)~acts if \(\nu>p\).
+\item (79, -8), (79, -6): the definitions of the operators \(i_A(h)\) and~\(i_S(h)\) given in this subsection are inappropriate for use with the algebras of skew-symmetric and symmetric multilinear functions, respectively. See below.
 \item (80, 11): in the displayed equation, \(E^{*\nu}\)~should be~\(E^*\).
 \item (82, 6): in the displayed equation, \(\langle f_1\cdot\ldots\cdot f_p\Psi\rangle\) should be \(\sprod{f_1\cdot\ldots\cdot f_p}{\Psi}\).
 \item (82, -10): in the displayed equation,
@@ -298,6 +301,56 @@ should be
 \item (91, 2): in the displayed equation, \(X(E)\)~should be~\(X^p(E)\).
 \item (93, 11): in~(4.31), \(\pi_r v\)~should be~\(\pi_S v\).
 \item (95, -5): in~(4.36), \(\bigtprod E^*\)~should be~\(\bigtprod^p E^*\) and \(\bigtprod E\)~should be~\(\bigtprod^p E\).
+\end{itemize}
+
+\section*{Chapter~5}
+\begin{itemize}
+\item (97, 15): it should be assumed that \(i<j\).
+\item (99, -15): in problem~2(a), in the displayed equation, \(x_p\)~should be~\(x_n\).
+\item (99, -10): in problem~2(b), in the definition of~\(\varphi\), \((-1)^{n-1}\) should be \((-1)^{n-i}\).
+\item (100, -5): ``\(p\)-linear mappings'' should be ``skew-symmetric \(p\)-linear mappings''.
+\item (101, -2): ``\(p\)th exterior algebra'' should be ``\(p\)th exterior power''.
+\item (105, -13): it should be assumed that \((\epsilon x)^2=0\) for all \(x\in E\).
+\item (106, 4): the codomain of~\(g\) should be~\(\bigwedge E^*\).
+\item (108, 3): in problem~3, the matrix of a 2-vector has not been defined.
+\item (108, 4): in problem~4, the rightmost matrix in the Lagrange identity should be
+\[
+\begin{pmatrix}
+\eta^1_{\nu_1}&\cdots&\eta^1_{\nu_p}\\
+\vdots&&\vdots\\
+\eta^p_{\nu_1}&\cdots&\eta^p_{\nu_p}
+\end{pmatrix}
+\]
+Also, in the hint, the order of the two factors in the scalar product should be swapped, to be consistent with the rest of the chapter.
+\item (108, -2): \(\varphi_{\eprod},\bigeprod E\to\bigeprod F\) should be \(\varphi_{\eprod}:\bigeprod E\to\bigeprod F\).
+\item (115, 5): it should be clarified that \(\omega_E=\omega\) and \(\Omega_E=\Omega\).
+\item (115, -4): in problem~1(b), in the displayed equation, \(\pi_F\)~should be~\(\pi_E\).
+\item (116, -8): in problem~8, the transformations \((\psi-\lambda\iota)_{\eprod}\) and \(\psi_i\) should all be restricted to~\(\bigeprod^n E\). Also, \(\psi_0=(-1)_n\iota\) should be \(\psi_0=(-1)^n\iota\).
+\item (117, 8): it must be assumed that the dual map exists.
+\item (118, 13): \(\Omega(h)\)~should be~\(\Omega_h\).
+\item (119, 8): in the proof of Proposition~5.14.2, it should be assumed that \(v\in\bigeprod^p E\).
+\item (119, -4): in problem~3, it should be assumed that \(e_{\nu},e^{*\nu}\) is a pair of dual bases of \(E,E^*\).
+\item (120, 7): in problem~6, in the displayed equation, the order of the two factors in the scalar product should be swapped to be consistent with the rest of the chapter.
+\item (141, -8): in Proposition~5.30.1(B), \(A(E)\)~has not been defined.
+\item (141, -1): in the proof of Proposition~5.30.1(B), the first and second equalities in the first displayed equation should be swapped.
+\item (142, -1): in the third equality of the displayed equation, \(\theta^T(\varphi)\cdot\Psi\) should be \(\theta^T(\varphi)\Phi\cdot\Psi\).
+\item (143, 1): in subsection~5.32, the substitution operator~\(i_A(h)\) should be redefined on~\(T^p(E)\) as
+\[i_A(h)=\frac{1}{p}\sum_{\nu=1}^p(-1)^{\nu-1}i_{\nu}(h)\]
+The missing factor of~\(1/p\) introduces errors throughout the subsection.
+\item (143, -3): in the displayed equation, the tensor product symbols should be function product symbols.
+\item (145, 4): in the displayed equation, \(i(h)\)~should be~\(i_A(h)\).
+\item (145, -11): in the heading of subsection~5.33, \(T^{\bullet}(E)\)~should be~\(A^{\bullet}(E)\).
+\item (146, -16): ``mappings'' should be ``functions''.
+\item (146, -8): in the displayed equation, \(A^p(E)\)~should be~\(T^p(E)\) and \(A_p(E)\)~should be~\(T_p(E)\).
+\item (147, 9): the proof should be
+\begin{align*}
+\sprod{\Phi}{x_1\eprod\cdots\eprod x_p}_A&=\frac{1}{p!}\sprod{\Phi}{x_1\eprod\cdots\eprod x_p}\\
+	&=\sprod{\Phi}{A(x_1\cdot\ldots\cdot x_p)}\\
+	&=\sprod{A\Phi}{x_1\cdot\ldots\cdot x_p}\\
+	&=\sprod{\Phi}{x_1\cdot\ldots\cdot x_p}\\
+	&=\Phi(x_1,\ldots,x_p)
+\end{align*}
+\item (147, -1): in the displayed equation, \(A(x_1\tprod\cdots\tprod x_p)\) should be \(A(x_1\cdot\ldots\cdot x_p)\) and \(f_1(x_{\sigma(p)})\)~should be~\(f_1(x_{\sigma(1)})\).
 \end{itemize}
 
 % References
