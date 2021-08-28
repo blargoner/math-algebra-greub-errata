@@ -7,11 +7,13 @@
 \renewcommand{\H}{\mathbb{H}}
 
 \newcommand{\from}{\leftarrow}
+\newcommand{\divides}{\mid}
 
 \DeclareMathOperator{\tr}{tr}
 
 \newcommand{\union}{\cup}
 \newcommand{\after}{\circ}
+\newcommand{\dsum}{\oplus}
 \newcommand{\bigdsum}{\bigoplus}
 \newcommand{\tprod}{\otimes}
 \newcommand{\bigtprod}{\bigotimes}
@@ -37,9 +39,9 @@ This document contains errata from \cite{greub1} and~\cite{greub2}. Locations wi
 % Linear algebra
 \newpage
 \part*{Linear Algebra}
-Errata are currently only listed for Chapters 0--V, VI (except \S~3), VII, VIII (except \S~7), XI (except \S~4--5), and XII (except \S~4).
+Errata are currently only listed for Chapters 0--V, VI (except \S~3), VII, VIII (except \S~7), XI (except \S~4--5), XII (except \S~4), and~XIII.
 
-Minor, purely typographical inconsistencies like those between ``\(\to\)'' and ``\(\mapsto\)'', or between ``\(1\ldots n\)'' and ``\(1,\ldots,n\)'', or between ``family \(x_{\alpha}\)'' and ``family \((x_{\alpha})\)'' and ``family \(\{x_{\alpha}\}\)'', are not listed but occur frequently.
+Minor, purely typographical inconsistencies like those between ``\(\to\)'' and ``\(\mapsto\)'', or between ``\(1\ldots n\)'' and ``\(1,\ldots,n\)'', or between ``family \(x_{\alpha}\)'' and ``family \((x_{\alpha})\)'' and ``family \(\{x_{\alpha}\}\)'', or between ``\(f\divides g\)'' and ``\(f/g\)'', are not listed below but occur frequently.
 
 \section*{Chapter~0}
 \begin{itemize}
@@ -187,7 +189,6 @@ Minor, purely typographical inconsistencies like those between ``\(\to\)'' and `
 \item (234, -16): ``\emph{rotation}'' should be ``\emph{rotation}~\(\varphi\)''.
 \item (234, -10): it must be assumed that \(e\ne 0\).
 \item (234, -9): ``sec.~4, 17'' should be ``sec.~4.17''.
-\item (235, 16): in the definition of a homothetic transformation, it should not be required that \(\lambda\geqq0\).
 \item (238, -7): in~(8.40), the second equation should be \(\sin\theta=-\tfrac{1}{2}\tr(j\after\varphi)\).
 \item (239, 17): in the displayed equation, ``\(\equiv\)''~should be~``\(=\)''.
 \item (240, -13): ``see~8.21'' should be ``sec.~8.21''.
@@ -234,7 +235,8 @@ and it should be noted that \(z_k=x_k+iy_k\).
 \item (358, -12): ``ar'' should be ``or''.
 \item (358, -4): in subsection~12.7, least common multiple should be defined for arbitrary nonzero polynomials and the rest of the chapter updated to reflect this.
 \item (360, -5): \(g\leqq 0\) should be \(0\leqq g\).
-\item (363, 8): in the proof of Proposition~IV, it must be assumed (without loss of generality) that \(f\)~is monic.
+\item (361, 3): it should be clarified that \(k_i\ge 1\).
+\item (363, 8): in the proof of Proposition~IV, it must be assumed (without loss of generality) that \(f\) and~\(g\) are monic.
 \item (363, -4): ``common factor'' should be ``nonconstant common factor''.
 \item (364, 10): in the displayed equation, \(n\)~should be~\(r\).
 \item (366, -3): ``commutative'' should be deleted.
@@ -242,6 +244,78 @@ and it should be noted that \(z_k=x_k+iy_k\).
 \item (367, -13): in the displayed equation, \(\Phi(f)\) and~\(\pi(f)\) should be swapped.
 \item (367, -3): ``Proposition~V'' should be ``Proposition~I''.
 \item (369, 8), (369, 13): the~Q's should all be~\(\Q\)'s.
+\end{itemize}
+
+\section*{Chapter~XIII}
+\begin{itemize}
+\item (387, 5): ``Proposition~II'' should be ``Proposition~I''.
+\item (387, 7): the displayed equation should be
+\[K(f)=K(1)=0\]
+\item (387, 15): ``non-zero'' should be deleted.
+\item (388, -11): \(\varphi_0\)~should be~\(\varphi\).
+\item (389, 4): in problem~2, ``Given'' should be ``Give''.
+\item (389, -15): in problem~6, ``minimal polynomial'' should be ``minimum polynomial''.
+\item (389, -11): in problem~6, in the displayed equation, it should be clarified that the~\(\lambda_{\nu}\) are not all zero.
+\item (390, 8): in problem~8, in the displayed equation, \(\alpha_v\)~should be~\(\alpha_{\nu}\).
+\item (390, -13): in problem~13, \(L(E,E)\)~should be~\(L(E;E)\).
+\item (393, -7): ``vektor'' should be ``vector''.
+\item (395, 14): in problem~1, ``stable subspace'' should be ``non-zero stable subspace''.
+\item (396, -17): in problem~7, ``unique'' should be deleted.
+\item (397, -1): ``\(f\) irreducible'' should be ``\(f\) monic irreducible''.
+\item (398, 4): \(a\in K(f)\) should be \(a\in K(h)\).
+\item (398, 7): ``Thus \(K(g)=K_{\mu}\). Now it follows from (13.28) that \(a\in K_{\mu}\).'' should be ``Thus \(g=\mu\). Now it follows that \(h\in I_{\mu}\).''
+\item (398, 10): it should be clarified that this is the prime decomposition of~\(\mu\) (so the \(f_i\) are distinct monic and \(k_i\ge 1\)).
+\item (400, -3): ``Proposition~III'' should be ``Proposition~II''.
+\item (402, 12): it should be clarified that \(m=\deg\mu\). Also, for this reason, \(\mu\)~should not be used as the index variable!
+\item (402, 13): \(1\dots m-1\) should be \(0\dots m-1\).
+\item (402, -13): \(\pi^*\)~should be~\(\pi\).
+\item (403, 11): in the displayed equation, \(F_i\)~should be~\(F_j\).
+\item (403, 16): in the displayed equation, \(F_r\)~should be~\(F_j\), and it should be clarified that \(\dim F_j>0\).
+\item (403, -15): \(j=1\) should be \(r=1\).
+\item (403, -12): ``\(\varphi\)~is cyclic'' should be ``\(E\)~is cyclic''.
+\item (403, -8): in part~(i) of Theorem~I, it should be clarified that this is the prime decomposition of~\(\mu\) (so \(f\)~is monic and \(k\ge 1\)).
+\item (404, 10): \(\mu\divides f^{k_i}\) should be \(\mu\divides f^{k_1}\).
+\item (404, 13): ``13.10'' should be ``13.11''.
+\item (404, -1): ``\(f\)~is an irreducible'' should be ``\(f\)~is a monic irreducible''.
+\item (406, 3): ``irreducible'' should be deleted.
+\item (406, 5): ``13.12'' should be ``13.13''.
+\item (407, 5): in the matrix, there should be a~\(0\) in the upper right corner.
+\item (407, -16): ``13.12'' should be ``13.13''.
+\item (407, -11): it should be clarified that this is the prime decomposition of~\(\mu\) (so \(f\)~is monic and \(k\ge 1\)).
+\item (407, -10): ``irreducible subspaces'' should be ``non-zero irreducible subspaces''.
+\item (407, -8): ``13.12'' should be ``13.14''.
+\item (410, -10): \(\psi\)~should be~\(\psi_i^j\).
+\item (412, -10): it should be clarified that this is the prime decomposition of~\(f\) (so the~\(f_i\) are distinct monic and \(m_i\ge 1\)).
+\item (413, 9): in problem~1, ``\(\varphi\in A(E;E)\)'' should be moved from~(i) to~(ii).
+\item (414, 3): in problem~6(a), ``\(\varphi_j\)~is cyclic'' should be ``\(F_j\)~is cyclic''.
+\item (414, 18): in problem~8(a), \(K(f^{k-1})\)~should be~\(K(f^k)\).
+\item (416, -9): it should be clarified that \(j_1\ne j_2\).
+\item (417, 5): the first displayed equation should be
+\[f_1^{l_2}(\varphi)f_1^{l_1-l_2}(\varphi)y_1=0\]
+\item (418, 5): \(\tau\)~need not be a surjection.
+\item (419, 5): \(f\divides\mu\) should be \(\mu\divides f\).
+\item (420, 13): \(F_0\)~should be~\(F\).
+\item (422, 5): ``subalgebra of (cf. example~I, see~5.2)'' should be ``subalgebra of \(A(E;E)\) (cf. example~I, sec.~5.2)''.
+\item (422, -2): \(\varphi\)~should be~\(\varphi_i\).
+\item (423, 5): \(E_j\)~should be~\(F_j\).
+\item (425, -6): ``13.14'' should be ``13.15''.
+\item (427, 15): ``12.17'' should be ``12.16''.
+\item (427, 16): ``decompositions'' should be ``decomposition''.
+\item (427, -7): ``12.14'' should be ``12.13''.
+\item (428, 2): it should be clarified that this is the prime decomposition of~\(\mu\) (so the~\(f_i\) are monic).
+\item (428, -14): the displayed equation should be
+\[E=F_1\dsum\cdots\dsum F_s\]
+\item (429, 3): \(g\)~should be~\(q\).
+\item (429, 5): ``over~\(\Delta[t]\)'' should be ``in~\(\Delta[t]\)''.
+\item (429, -9), (429, -8): in Theorem~I, it should be clarified that the prime decomposition of the minimum polynomial of~\(\varphi\) is \(f_1^{k_1}\cdots f_r^{k_r}\).
+\item (429, -3): \(\psi_N=\psi_N\) should be \(\psi_N=\varphi_N\).
+\item (430, 12): ``see.~13.15'' should be ``sec.~13.14''.
+\item (431, 4): ``polynomial'' should be ``polynomials''.
+\item (432, 3): \(\varphi_i:E\to E\) should be \(\varphi_i:E_i\to E_i\).
+\item (432, 5): \(E\)~should be~\(E_i\).
+\item (432, 7): in the displayed equation, \(E\)~should be~\(E_i\) (twice).
+\item (432, -1): it should be clarified that this is the prime decomposition of~\(\mu_1\) (so the~\(f_i\) are monic).
+\item (437, -11), (439, 8): in Theorems I and~II, the definition of \emph{homothetic} must be loosened slightly to allow for possibly negative scalars.
 \end{itemize}
 
 % Multilinear algebra
