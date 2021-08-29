@@ -23,6 +23,7 @@
 \newcommand{\sprod}[2]{\langle#1,#2\rangle}
 \newcommand{\iprod}[2]{(#1,#2)}
 \newcommand{\oc}[1]{#1^{\perp}}
+\newcommand{\proj}[1]{\overline{#1}}
 
 % Meta
 \title{Errata from \\\textit{Linear Algebra} and \textit{Multilinear Algebra}}
@@ -56,6 +57,7 @@ Minor, purely typographical inconsistencies like those between ``\(\to\)'' and `
 \item (12, 1): \(\lambda^i=0\) should be \(\lambda^i\ne 0\).
 \item (12, 5): throughout the proof of~(ii), \(n\)~should be~\(m\).
 \item (12, -5): ``The a partial order'' should be ``A partial order''.
+\item (12, -4): ``chain'' should be ``nonempty chain'', and it should be noted that \(R\)~is an upper bound for the empty chain.
 \item (12, -4): ``maximal element'' should be ``upper bound''.
 \item (13, 8): \(x\in E\) should be \(x\in S-T\).
 \item (13, 9), (13, 10): \(T\union x\) should be \(T\union\{x\}\) and \(x\union T\) should be \(\{x\}\union T\).
@@ -63,10 +65,12 @@ Minor, purely typographical inconsistencies like those between ``\(\to\)'' and `
 \item (14, 3), (14, 5): in the displayed equations, \(j=1\) should be \(i=1\).
 \item (15, -2): in problem~10, \(\{x_{\alpha}\}_{\alpha\ne\beta}\) should be \(\{a\}\union\{x_{\alpha}\}_{\alpha\ne\beta}\).
 \item (20, 16): ``\(\varphi(S)\)~is a system of generators for~\(\varphi(S)\)'' should be ``\(\varphi(S)\)~is a system of generators for~\(F\)''.
-\item (22, -15): in part~(v) of Problem~5, the concept of a generated subspace has not yet been defined.
+\item (22, -15), (22, -11): in part~(v) of Problem~5, the concepts of generated subspace and kernel have not yet been defined.
 \item (23, 7): in the definition of subspace, ``subset of~\(E\)'' should be ``nonempty subset of~\(E\)''.
 \item (27, -11): in the displayed equation, \(\lambda_i\)~should be~\(\lambda^i\) (two occurrences). Also, it should be noted that \(y_i\in E_1\) and \(z_i\in E_2\).
 \item (29, -16): ``\emph{canonical projection} of~\(E\) onto~\(E_1\)'' should be ``\emph{canonical projection} of~\(E\) onto~\(E/E_1\)''.
+\item (31, 14): in problem~7, ``composition'' should be ``decomposition''.
+\item (31, 19): in problem~8, the period at the end of the second sentence should be a question mark.
 \item (40, -8): in the second displayed equation in problem~6, \(u\in E_2'\) should be \(y\in E_2'\).
 \end{itemize}
 
@@ -83,6 +87,8 @@ Minor, purely typographical inconsistencies like those between ``\(\to\)'' and `
 \item (67, -1): in the displayed equation, \(y^*\in F\) should be \(y^*\in F^*\).
 \item (68, -7): in the displayed equation, \(\langle y^*(\varphi+\psi)x\rangle\) should be \(\sprod{y^*}{(\varphi+\psi)x}\).
 \item (70, 14): ``bilinear functions'' should be ``bilinear function''.
+\item (75, -2): in problem~10, the induced mapping should be
+\[\proj{\varphi}^*:E^*/\oc{E_1}\from F^*/\oc{F_1}\]
 \item (76, 9): ``imension'' should be ``dimension''.
 \item (76, -7): in the displayed equation (and really the rest of subsection~2.31), \(\varphi^{\mu}_{\nu}\)~should be~\(\varphi^{\nu}_{\mu}\).
 \item (77, -7): \(\varphi\)~should be~\(\Phi\).
@@ -115,7 +121,7 @@ Minor, purely typographical inconsistencies like those between ``\(\to\)'' and `
 \item (106, 5): ``(4.14)'' should be ``(4.12)''.
 \item (107, 13): in~(4.14), \(p=\dim E\) should be \(p=\dim E_1\).
 \item (109, 1): the problem numbers on this page should be incremented by~\(1\).
-\item (109, 10): in problem~6, it must be assumed that \(E\)~is real.
+\item (109, 10): in problem~6, it should be assumed that \(E\)~is real.
 \item (109, -11): in problem~8, the trace of a linear transformation has not yet been defined.
 \item (113, 1): ``(4.21)'' should be ``(4.22)''.
 \item (113, -10): in the displayed equation, \({x^*}_i\)~should be~\(x^{*i}\).
@@ -129,12 +135,15 @@ Minor, purely typographical inconsistencies like those between ``\(\to\)'' and `
 \item (117, 7): ``(4.35) and (4.30)'' should be ``(4.38) and (4.40)''.
 \item (117, -14): ``minor'' should be ``submatrix''.
 \item (122, 2): on the third line of the displayed equation, \(\sigma\)~should be~\(\varrho\).
-\item (130, -14): in problem~11, it must be assumed that \(E\)~is real.
+\item (130, -14): in problem~11, it should be assumed that \(E\)~is real.
 \item (130, -10): in problem~12, \(\varphi:E_1\to E_1\) should be \(\varphi_1:E_1\to E_1\).
+\item (132, 13): \(n\)~should be~\(E\).
+\item (132, 14): ``orientated'' should be ``oriented''.
 \item (135, -3): ``4.30'' should be ``4.29''.
 \item (136, -6): ``4.17'' should be ``4.16'', and it should be noted that \(\xi^i_{\nu}\)~are the components of~\(x_{\nu}\) with respect to some basis.
 \item (139, -13): \((a_1',b_2\ldots b_n)\) should be \((a_1',b_3\ldots b_n)\).
 \item (139, -10): in the displayed equation, \(i=1\ldots n\) should be \(i=1\ldots n-1\).
+\item (142, -11): in problem~5, ``isotopices'' should be ``isotopies''.
 \end{itemize}
 
 \section*{Chapter~V}
