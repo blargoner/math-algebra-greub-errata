@@ -1,7 +1,7 @@
 % Errata from Linear Algebra and Multilinear Algebra by Greub
 % By John Peloquin
 \documentclass[letterpaper,12pt]{article}
-\usepackage{amsmath,amssymb,amsthm,enumitem,fourier,stmaryrd}
+\usepackage{amsmath,amssymb,amsthm,enumitem,fourier,stmaryrd,mathtools}
 
 \newcommand{\Q}{\mathbb{Q}}
 \renewcommand{\H}{\mathbb{H}}
@@ -23,9 +23,12 @@
 \newcommand{\bigeprod}{\bigwedge}
 
 \newcommand{\sprod}[2]{\langle#1,#2\rangle}
+\newcommand{\ssprod}[2]{\langle\!\langle#1,#2\rangle\!\rangle}
 \newcommand{\iprod}[2]{(#1,#2)}
 \newcommand{\oc}[1]{#1^{\perp}}
 \newcommand{\proj}[1]{\overline{#1}}
+\newcommand{\stroked}[1]{\mathrlap{\text{\kern0.05em-}}#1}
+\newcommand{\unit}{\stroked{t}}
 
 % Meta
 \title{Errata from \\\textit{Linear Algebra} and \textit{Multilinear Algebra}}
@@ -333,7 +336,7 @@ and it should be noted that \(z_k=x_k+iy_k\).
 % Multilinear algebra
 \newpage
 \part*{Multilinear Algebra}
-Errata are currently only listed for Chapters 1, 2 (except \S~10--17), 3--4, and 5. Minor purely typographical inconsistencies are not listed.
+Errata are currently only listed for Chapters 1, 2 (except \S~10--17), and 3--6. Minor purely typographical inconsistencies are not listed.
 
 \section*{Chapter~1}
 \begin{itemize}
@@ -518,6 +521,52 @@ The missing factor of~\(1/p\) introduces errors throughout the subsection.
 	&=\Phi(x_1,\ldots,x_p)
 \end{align*}
 \item (147, -1): in the displayed equation, \(A(x_1\tprod\cdots\tprod x_p)\) should be \(A(x_1\cdot\ldots\cdot x_p)\) and \(f_1(x_{\sigma(p)})\)~should be~\(f_1(x_{\sigma(1)})\).
+\end{itemize}
+
+\section*{Chapter~6}
+\begin{itemize}
+\item (148, -8): in Proposition~6.1.1, it should be noted that \(\psi\)~maps into~\(H\).
+\item (149, -7): in the first equality of the displayed equation, \(\pi_2(x_1\eprod\cdots\eprod x_q)\) should be \(\pi_2(x_1\tprod\cdots\tprod x_q)\).
+\item (150, 10): the displayed equation should be \(w^0=1\tprod 1\).
+\item (150, -2): it must be assumed that the dual operator exists.
+\item (151, 2): ``if \(r\ge p\) and \(s\ge q\)'' should be ``if \(r\ge q\) and \(s\ge p\)''.
+\item (152, 13): in the displayed equation, \(\mu[\psi^{\eprod}\tprod\varphi_{\eprod})z]\) should be \(\mu[(\psi^{\eprod}\tprod\varphi_{\eprod})z]\).
+\item (153, 3): \(T_E(b\tprod a^*)\) should be \(T_{E^*}(b\tprod a^*)\).
+\item (153, -9): ``This show that the box product is symmetric,'' should be ``This shows that the box product is symmetric.''.
+\item (153, -7): in the displayed equation, \(\sigma\tau\) should be \(\tau\sigma\).
+\item (153, -6): \(\sigma\tau=\rho\) should be \(\tau\sigma=\rho\).
+\item (153, -3): in~(6.6), the notation \(\bigeprod^p\varphi\) has not yet been defined.\footnote{This notation is defined later on p.~169.}
+\item (154, 3): in the fifth equality of the displayed equation, the~\(T\)'s should be~\(T_E\)'s.
+\item (155, 11): in the displayed equation, \(\bigeprod^{p-p}_p(E^*,E)\) should be \(\bigeprod^p_p(E^*,E)\).
+\item (155, -11): ``for which \(w_1\after w_2\ne 0\)'' should be deleted.
+\item (157, -10): ``Section~6.5'' should be ``(6.5)''.
+\item (157, -7): in~(6.12), \(T^p_q(E^*,E)\) should be~\(\bigeprod^p_q(E^*,E)\) and \(T^q_p(E^*,E)\) should be~\(\bigeprod^q_p(E^*,E)\).
+\item (157, -6): \(w_2\in b^*\tprod a\) should be \(w_2=b^*\tprod a\).
+\item (159, 13): the corollary to Proposition~6.7.1 should be labeled.
+\item (161, 2): in the proof of~(2), \(D_e\)~should be~\(D_p\).
+\item (161, 5), (161, 6): in the proof of~(3), \(v\in\bigeprod^{n-p}E\) should be replaced by \(v^*\in\bigeprod^{n-p}E^*\).
+\item (161, 8): ``way'' should be ``way.''.
+\item (161, 12): it should be noted that \(e^*\in\bigeprod^n E^*\) and \(\sprod{e^*}{e}=1\).
+\item (161, -2): \(e^*,e\) should be \(e,e^*\).
+\item (164, -7): it should be noted that \(e_1\eprod\cdots\eprod e_n=e\).
+\item (164, -4): ``\((n-p)\)-tuple'' should be ``ordered \((n-p)\)-tuple''.
+\item (165, 6): in the displayed equation, \(e^{*\nu_n}\) should be~\(e^{*\nu_p}\).
+\item (166, 2): in the displayed equation, \(0\le i,j\le n-1\) should be \(1\le i,j\le n-1\).
+\item (166, 4): in the displayed equation, \(e_2\)~should be~\(e_n\).
+\item (167, 5): in problem~2, the first relation should be \(i(1\tprod u)\unit^p=1\tprod u\).
+\item (167, 13): in problem~4, \(\Delta(E^*,E)\) should be~\(\Delta E\).
+\item (168, 1): in problem~8, it should be noted that \(e_1\eprod\cdots\eprod e_n=e\).
+\item (168, 2): in problem~8, the displayed equation should be
+\[D_e(x_1\eprod\cdots\eprod x_p)=\sum_{\nu_1<\cdots<\nu_p}(-1)^{\sum_{i=1}^p(\nu_i-i)}\det\sprod{e^{*\nu_j}}{x_i}e^{\nu_{p+1}\cdots\nu_n}\]
+\item (168, 3): in problem~8, ``complement \((\nu_1,\ldots,\nu_p)\)'' should be ``complement of \((\nu_1,\ldots,\nu_p)\)''.
+\item (169, -7): in the displayed equation, \(\varphi\tprod\iota\) should be \(\iota\tprod\varphi\).
+\item (170, 12): in~(6.30), \(\psi\tprod\iota\) should be \(\iota\tprod\psi\).
+\item (170, 13): it is circular (and unnecessary) to prove that \(T\) and~\(\widetilde{T}\) are linear isomorphisms with the aid of (6.28) and~(6.30).
+\item (171, 2): \(v^*\in\bigeprod^r E\) should be \(v^*\in\bigeprod^r E^*\).
+\item (171, -13): in the displayed equation, ``\(pq\) even'' should be ``\(p+q\) even''.
+\item (171, -5): in the title of subsection~6.18, \(E^*\stprod E\) should be \(\bigeprod E^*\stprod\bigeprod E\).
+\item (172, 5): in the displayed equation, \(x^*\dsum x\) should be \(x^*+x\) and \(y^*\dsum y\) should be \(y^*+y\).
+\item (172, -3): in the displayed equations, \(\ssprod{x^*_{\alpha}}{y_{\delta}}\) should be \(\sprod{x^*_{\alpha}}{y_{\delta}}\) and \(\ssprod{y^*_{\gamma}}{x_{\beta}}\) should be \(\sprod{y^*_{\gamma}}{x_{\beta}}\).
 \end{itemize}
 
 % References
