@@ -4,12 +4,16 @@
 \usepackage{amsmath,amssymb,amsthm,enumitem,fourier,stmaryrd,mathtools}
 
 \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
 \renewcommand{\H}{\mathbb{H}}
 
 \newcommand{\from}{\leftarrow}
 \newcommand{\divides}{\mid}
 
 \DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\ad}{ad}
+\DeclareMathOperator{\Ad}{Ad}
+\DeclareMathOperator{\Det}{Det}
 
 \newcommand{\union}{\cup}
 \newcommand{\after}{\circ}
@@ -22,6 +26,8 @@
 \newcommand{\eprod}{\wedge}
 \newcommand{\bigeprod}{\bigwedge}
 
+\newcommand{\abs}[1]{|#1|}
+\newcommand{\conj}[1]{\overline{#1}}
 \newcommand{\sprod}[2]{\langle#1,#2\rangle}
 \newcommand{\ssprod}[2]{\langle\!\langle#1,#2\rangle\!\rangle}
 \newcommand{\iprod}[2]{(#1,#2)}
@@ -70,9 +76,9 @@ Minor, purely typographical inconsistencies like those between ``\(\to\)'' and `
 \item (14, 3), (14, 5): in the displayed equations, \(j=1\) should be \(i=1\).
 \item (15, -2): in problem~10, \(\{x_{\alpha}\}_{\alpha\ne\beta}\) should be \(\{a\}\union\{x_{\alpha}\}_{\alpha\ne\beta}\).
 \item (20, 16): ``\(\varphi(S)\)~is a system of generators for~\(\varphi(S)\)'' should be ``\(\varphi(S)\)~is a system of generators for~\(F\)''.
-\item (22, -15), (22, -11): in part~(v) of Problem~5, the concepts of generated subspace and kernel have not yet been defined.
+\item (22, -15), (22, -11): in problem~5(v), the concepts of generated subspace and kernel have not yet been defined.
 \item (23, 7): in the definition of subspace, ``subset of~\(E\)'' should be ``nonempty subset of~\(E\)''.
-\item (27, -11): in the displayed equation, \(\lambda_i\)~should be~\(\lambda^i\) (two occurrences). Also, it should be noted that \(y_i\in E_1\) and \(z_i\in E_2\).
+\item (27, -11): in the displayed equation, \(\lambda_i\)~should be~\(\lambda^i\) (twice). Also, it should be noted that \(y_i\in E_1\) and \(z_i\in E_2\).
 \item (29, -16): ``\emph{canonical projection} of~\(E\) onto~\(E_1\)'' should be ``\emph{canonical projection} of~\(E\) onto~\(E/E_1\)''.
 \item (31, 14): in problem~7, ``composition'' should be ``decomposition''.
 \item (31, 19): in problem~8, the period at the end of the second sentence should be a question mark.
@@ -136,7 +142,7 @@ Minor, purely typographical inconsistencies like those between ``\(\to\)'' and `
 \item (115, -10): the displayed equation should be \(\beta^i_j=\det C^j_i\).
 \item (116, 11): ``(4.36)'' should be ``(4.38)''.
 \item (116, -1): in the displayed matrix~\(B^j_i\), the first column should have entries \(1,\alpha^j_1,\ldots,\alpha^j_{i-1},\alpha^j_{i+1},\ldots,\alpha^j_n\).
-\item (117, 3): ``(4.38)'' should be ``(4.16)'', or a reference to Problem~6.
+\item (117, 3): ``(4.38)'' should be ``(4.16)'', or a reference to problem~6.
 \item (117, 7): ``(4.35) and (4.30)'' should be ``(4.38) and (4.40)''.
 \item (117, -14): ``minor'' should be ``submatrix''.
 \item (118, 4): in problem~1, in the Laplace expansion, \(\nu_1<\cdots<\nu_n\) should be \(\nu_1<\cdots<\nu_p\), and it should be noted that \(\nu_{p+1}<\cdots<\nu_n\) is the complementary ordered \((n-p)\)-tuple.
@@ -336,7 +342,7 @@ and it should be noted that \(z_k=x_k+iy_k\).
 % Multilinear algebra
 \newpage
 \part*{Multilinear Algebra}
-Errata are currently only listed for Chapters 1, 2 (except \S~10--17), and 3--6. Minor purely typographical inconsistencies are not listed.
+Errata are currently only listed for Chapters 1, 2 (except \S~10--17), and 3--7. Minor purely typographical inconsistencies are not listed.
 
 \section*{Chapter~1}
 \begin{itemize}
@@ -551,6 +557,7 @@ The missing factor of~\(1/p\) introduces errors throughout the subsection.
 \item (164, -7): it should be noted that \(e_1\eprod\cdots\eprod e_n=e\).
 \item (164, -4): ``\((n-p)\)-tuple'' should be ``ordered \((n-p)\)-tuple''.
 \item (165, 6): in the displayed equation, \(e^{*\nu_n}\) should be~\(e^{*\nu_p}\).
+\item (165, -13): in subsection~6.14, it should be noted that the external product is only defined when \(n\ge 1\).
 \item (166, 2): in the displayed equation, \(0\le i,j\le n-1\) should be \(1\le i,j\le n-1\).
 \item (166, 4): in the displayed equation, \(e_2\)~should be~\(e_n\).
 \item (167, 5): in problem~2, the first relation should be \(i(1\tprod u)\unit^p=1\tprod u\).
@@ -567,6 +574,66 @@ The missing factor of~\(1/p\) introduces errors throughout the subsection.
 \item (171, -5): in the title of subsection~6.18, \(E^*\stprod E\) should be \(\bigeprod E^*\stprod\bigeprod E\).
 \item (172, 5): in the displayed equation, \(x^*\dsum x\) should be \(x^*+x\) and \(y^*\dsum y\) should be \(y^*+y\).
 \item (172, -3): in the displayed equations, \(\ssprod{x^*_{\alpha}}{y_{\delta}}\) should be \(\sprod{x^*_{\alpha}}{y_{\delta}}\) and \(\ssprod{y^*_{\gamma}}{x_{\beta}}\) should be \(\sprod{y^*_{\gamma}}{x_{\beta}}\).
+\end{itemize}
+
+\section*{Chapter~7}
+\begin{itemize}
+\item (174, -9): it should be noted that \(e\)~is a basis vector of~\(\bigeprod^n E\).
+\item (175, 11): ``ander'' should be ``under''.
+\item (175, -8): \(\Phi=T_E(z)\) should be \(\varphi=T_E(z)\).
+\item (175, -8): ``Section~6.3'' should be ``Section~6.5''.
+\item (175, -7): in~(7.4), \(w\in\bigeprod(E^*,E)\) should be \(w\in\bigeprod^p_p(E^*,E)\) (twice).
+\item (175, -2): it should be noted that \(\varphi\)~is a linear transformation of~\(E\).
+\item (175, -1): it should be noted that \(\Delta\)~is a nonzero determinant function in~\(E\).
+\item (176, 6): in the displayed equation, \(\varphi^{\eprod}e^*\) should be~\(\varphi_{\eprod}e\).
+\item (176, 12): in the displayed equation, it should be noted that \(\varphi=T_E(z)\).
+\item (176, -10): in the displayed equation, \(t_p\)~should be~\(\unit_p\).
+\item (177, 3): in Proposition~7.2.2, \(T(z)=\varphi\) should be \(T_E(z)=\varphi\), and it should be assumed that \(0\le p,q\le n\le p+q\).
+\item (177, -6): in subsection~7.3, it should be assumed that \(n\ge 1\).
+\item (177, -1): in the displayed equation, it should be noted that \(z\in E^*\tprod E\).
+\item (178, 4): \(n=1\) should be \(n=2\).
+\item (178, -1): in the displayed equation, it should be assumed that \(1\le q\le n\).
+\item (179, 1): in the displayed equation, it should be assumed that \(1\le p\le q\).
+\item (179, 4): in the displayed equation, \(i(\ad z)^{p-1})z^{n-1}\) should be \(i((\ad z)^{p-1})z^{n-1}\).
+\item (179, -14): in subsection~7.4, it should be assumed that \(n\ge 1\).
+\item (179, -1): it should be noted that the displayed equation shows that \(\Ad(\varphi_1,\ldots,\varphi_{n-1})\) is independent of the choice of \(\Delta\ne 0\).
+\item (180, -1): it should be noted that \(e^{*1},\ldots,e^{*n}\) is the dual basis of \(e_1,\ldots,e_n\).
+\item (182, 7): in the proof of Corollary~II, in the last equality of the displayed equation, \(\ad(\psi)\after\ad(\varphi)\) should be \(\ad(\varphi)\after\ad(\psi)\).
+\item (183, -4): the displayed equation should be
+\[\det(\varphi+\psi)=\sum_{p+q=n}\frac{1}{p!q!}\Det(\underbrace{\varphi,\ldots,\varphi}_p,\underbrace{\psi,\ldots,\psi}_q)\]
+\item (184, -9): in the proof of the Corollary, in the third equality of the displayed equation, \(\bigeprod^n\psi\) should be~\(\bigeprod^p\psi\).
+\item (184, -7): in subsection~7.6, it should be assumed that \(n\ge 1\).
+\item (185, 4): in the displayed equation, \(\varphi\mult A_{p-1}(\varphi)\) should be \(\varphi\after A_{p-1}(\varphi)\).
+\item (185, -6): in the displayed equation, \(\ad(z+\lambda\iota)\) should be \(\ad(z+\lambda\unit)\).
+\item (186, -14): in subsection~7.7, it should be assumed that \(n\ge 1\).
+\item (186, -13): in subsection~7.8, it should be assumed that \(n\ge 1\).
+\item (187, -4): the displayed equation should be
+\[s_p(\lambda_1,\ldots,\lambda_n)=\sum_{\nu=1}^n\lambda_{\nu}^p\]
+\item (188, 5): the definition of~\(\Delta\) should be
+\[\Delta=\frac{i^n}{2^n}\Delta_E\eprod\conj{\Delta}_E\]
+\item (188, 8): ``\(\Delta\)~is linear'' should be ``\(\Delta\)~is \(2n\)-linear''.
+\item (188, 10): \(\Delta(z_1,\ldots,z_n)=0\) should be \(\Delta_E(z_1,\ldots,z_n)=0\).
+\item (188, 12): in the first equality in the computation of \(\Delta(a_1,\ldots,a_n,ia_1,\ldots,ia_n)\), \((-i)^n\)~should be~\(i^n\) and \(\alpha_{\sigma(1)}\)~should be~\(a_{\sigma(1)}\).
+\item (188, -13): ``orientation of~\(E_{\R}\) determined by~\(\Delta_E\)'' should be ``orientation of~\(E_{\R}\) determined by~\(\Delta\)''.
+\item (188, -3): the displayed equation should be
+\[\varphi_{\R}^A\Delta=i^n\varphi^A\Delta_E\eprod\varphi^A\conj{\Delta}_E\]
+\item (188, -1): in the displayed equations, \(\varphi^*\)~should be~\(\varphi^A\) (twice).
+\item (189, 2): the displayed equation should be
+\[\det\varphi_{\R}\mult\Delta=\varphi_{\R}^A\Delta=i^n\det\varphi\,\conj{\det\varphi}\mult\Delta_E\eprod\conj{\Delta}_E=\abs{\det\varphi}^2\Delta\]
+\item (189, 9): in the Corollary, \(C_r(\varphi)_{\R}\)~should be~\(C_r(\varphi_{\R})\), and \(r=0,\ldots,n\) should be \(r=0,\ldots,2n\).
+\item (189, 14): in problem~2, in the definition of~\(T(\varphi)\), \(a_i\tprod a^{*i}\)~should be~\(a^{*i}\tprod a_i\) to be consistent with the rest of the chapter.
+\item (190, 10), (190, 12): in problem~8, \(\Delta(E,E^*)\)~should be~\(\Delta E\) (twice).
+\item (190, 15): in problem~8(a), ``Section~6.14'' should be ``Section~6.15''.
+\item (190, -14): in problem~8(b), in the first displayed equation, \(D\)~should be~\(D_L\).
+\item (191, 1): in problem~9, ``Proposition~7.2.2'' should be ``Proposition~7.2.1''.
+\item (191, 3): in problem~9, ``\(n\times p\) matrix'' should be ``\(n\times n\) matrix''.
+\item (191, 6): in problem~9, the displayed equation should be
+\[\det A=\sum_{\nu_1<\cdots<\nu_p}(-1)^{\sum_{i=1}^p\lambda_i+\nu_i}\det A_{\lambda_1\cdots\lambda_p}^{\nu_1\cdots\nu_p}\det A_{\lambda_{p+1}\cdots\lambda_n}^{\nu_{p+1}\cdots\nu_n}\]
+\item (191, 7): in problem~9, ``complementary \((n-p)\)-tuple of~\((\nu_1,\ldots,\nu_n)\)'' should be ``complementary ordered \((n-p)\)-tuple of~\((\nu_1,\ldots,\nu_p)\)''.
+\item (191, 10): in problem~10, it should be assumed that \(n\ge 2\).
+\item (191, -9): in problem~11, ``complementary \((n-p)\)-tuples'' should be ``complementary ordered \((n-p)\)-tuples''.
+\item (191, -7): in problem~12, it should be noted that \(e,e^*\) is a pair of dual basis vectors of \(\bigeprod^n E,\bigeprod^n E^*\) and \(e_1,\ldots,e_n\) is a basis of~\(E\) with \(e_1\eprod\cdots\eprod e_n=e\).
+\item (192, 8): in problem~14, in the displayed equation, \(D_L^{-1}\)~should be~\(D_{L^*}\), where \(D_{L^*}:L(\bigeprod E^*;\bigeprod E^*)\to L(\bigeprod E^*;\bigeprod E^*)\).
 \end{itemize}
 
 % References
