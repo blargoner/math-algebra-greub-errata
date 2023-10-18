@@ -8,6 +8,7 @@
 \renewcommand{\H}{\mathbb{H}}
 
 \newcommand{\from}{\leftarrow}
+\newcommand{\iso}{\cong}
 \newcommand{\divides}{\mid}
 
 \DeclareMathOperator{\tr}{tr}
@@ -25,6 +26,8 @@
 \newcommand{\stprod}{\mathop{\widehat{\otimes}}}
 \newcommand{\eprod}{\wedge}
 \newcommand{\bigeprod}{\bigwedge}
+\newcommand{\smprod}{\vee}
+\newcommand{\bigsmprod}{\bigvee}
 
 \newcommand{\abs}[1]{|#1|}
 \newcommand{\conj}[1]{\overline{#1}}
@@ -342,7 +345,7 @@ and it should be noted that \(z_k=x_k+iy_k\).
 % Multilinear algebra
 \newpage
 \part*{Multilinear Algebra}
-Errata are currently only listed for Chapters 1, 2 (except \S~10--17), and 3--7. Minor purely typographical inconsistencies are not listed.
+Errata are currently only listed for Chapters 1, 2 (except \S~10--17), 3--7, and~9. Minor purely typographical inconsistencies are not listed.
 
 \section*{Chapter~1}
 \begin{itemize}
@@ -446,7 +449,7 @@ should be
 \item (100, -5): ``\(p\)-linear mappings'' should be ``skew-symmetric \(p\)-linear mappings''.
 \item (101, -12): ``it reduces to zero'' should be ``\(h\)~reduces to zero''.
 \item (101, -2): ``\(p\)th exterior algebra'' should be ``\(p\)th exterior power''.
-\item (105, -13): it should be assumed that \((\epsilon x)^2=0\) for all \(x\in E\).
+\item (105, -13): it should be assumed that \((\varepsilon x)^2=0\) for all \(x\in E\).
 \item (106, 4): the codomain of~\(g\) should be~\(\bigwedge E^*\).
 \item (108, 3): in problem~3, the matrix of a 2-vector has not been defined.
 \item (108, 4): in problem~4, the rightmost matrix in the Lagrange identity should be
@@ -635,6 +638,55 @@ The missing factor of~\(1/p\) introduces errors throughout the subsection.
 \item (191, -9): in problem~11, ``complementary \((n-p)\)-tuples'' should be ``complementary ordered \((n-p)\)-tuples''.
 \item (191, -7): in problem~12, it should be noted that \(e,e^*\) is a pair of dual basis vectors of \(\bigeprod^n E,\bigeprod^n E^*\) and \(e_1,\ldots,e_n\) is a basis of~\(E\) with \(e_1\eprod\cdots\eprod e_n=e\).
 \item (192, 8): in problem~14, in the displayed equation, \(D_L^{-1}\)~should be~\(D_{L^*}\), where \(D_{L^*}:L(\bigeprod E^*;\bigeprod E^*)\to L(\bigeprod E^*;\bigeprod E^*)\).
+\end{itemize}
+
+\section*{Chapter~9}
+\begin{itemize}
+\item (210, 8): in the displayed equation, the extra left parenthesis should be deleted.
+\item (212, 2): it should be noted that \(\pi\)~is the canonical projection \(\pi:\bigtprod E\to\bigtprod E/M(E)\), contrary to the notational convention in subsection~5.4.
+\item (212, -7): it should be assumed that \(\varepsilon x\mult\varepsilon y=\varepsilon y\mult\varepsilon x\) for all \(x,y\in E\).
+\item (214, -8): it must be assumed that the dual map exists.
+\item (214, -5): in the displayed equation, \(a\eprod v\) should be \(a\smprod v\).
+\item (214, -4): ``degree~\(p\)'' should be ``degree~\(-p\)''.
+\item (214, -3): in the displayed equation, \(u^*\in\bigsmprod^p E\) should be \(u^*\in\bigsmprod^p E^*\).
+\item (214, -1): in the displayed equation, \(u^*\in\bigsmprod^r E\) should be \(u^*\in\bigsmprod^r E^*\).
+\item (215, 9): ``Proporition~5.14.1'' should be ``Proposition~5.14.1''.
+\item (215, 14): \(u^*\in\bigsmprod^p E\) should be \(u^*\in\bigsmprod^p E^*\).
+\item (215, -11): \(I_p\subset\bigsmprod^p E^*\) should be \(I_p\subset\bigsmprod E^*\).
+\item (215, -4): \(q\leqq p\) should be \(q\geqq p\).
+\item (216, -12): \(i(h)^{\mu}u^*\) should be \(i(h)^{\mu}v^*\) and \(i(h)^0v=v\ne0\) should be \(i(h)^0v^*=v^*\ne0\).
+\item (216, -1): in the displayed equation, \(v^*_n\)~should be~\(v^*_{\kappa}\).
+\item (217, 11): in the displayed equation, it should be noted that \(u\in\bigsmprod E\) and \(v\in\bigsmprod F\).
+\item (217, -6): in the displayed equation, \(x\tprod y\) should be \(x+y\) (twice).
+\item (218, 3): in the displayed equation, it should be noted that \(f\)~has two meanings.
+\item (218, 8): \(E=\sum_{i=1}E_i\) should be \(E=\sum_{i=1}^rE_i\).
+\item (218, 9): it should be assumed that \(k_i\ge 1\).
+\item (218, -7): ``generate~\(\bigsmprod E\)'' should be ``generate~\(\bigsmprod^p E\)''.
+\item (220, 3): \(h_{\Phi}\)~should be redefined on~\(S^p(E)\) as
+\[h_{\Phi}(x)=\frac{1}{p!}\Phi(x,\ldots,x)\]
+\item (220, 5): in the displayed equation, \(i(x)\)~should be~\(i_S(x)\).
+\item (220, 9): in the displayed equation, \(\Phi,\Psi\in S^p(E)\) should be \(\Phi\in S^p(E),\Psi\in S^q(E)\).
+\item (220, 13): in the displayed equation, \(i(x)\)~should be~\(i_S(x)\).
+\item (221, 8): in the display, \(p\)~should be~\(n\).
+\item (222, 5): in the displayed equation, \(e_1^{\nu_1}\cdots e_n^{\nu_n}\) should be \(e_1^{\nu_1}\smprod\cdots\smprod e_n^{\nu_n}\), and \(c_{\nu_1\cdots\nu_p}\in\Gamma\) should be \(c_{\nu_1\cdots\nu_n}\in\Gamma\).
+\item (222, -11): in the displayed equation, \(e_1^{\nu_1}\cdots e_n^{\nu_n}\) should be \(e_1^{\nu_1}\smprod\cdots\smprod e_n^{\nu_n}\).
+\item (222, -4): ``\(\varphi\)~is an algebra isomorphism'' should be ``\(\varphi\)~extends to an algebra isomorphism''.
+\item (223, -16): in subsections 9.15--18, it should be assumed that \(E\)~is \(n\)-dimensional.
+\item (223, -5), (223, -3), (223, -1): in the displayed equations, \(\tprod\)~should be~\(\mult\) to be consistent with notational conventions in the rest of the book.
+\item (224, 11), (224, 13): \(\varphi^*\)~should be~\(\varphi^S\).
+\item (224, 16): in the displayed equation, it should be noted that \(\Phi\in S^p(E)\).
+\item (224, -12): in subsection~9.16, the substitution operator~\(i_S(h)\) should be redefined on~\(T^p(E)\) as
+\[i_S(h)=\frac{1}{p}\sum_{\nu=1}^p i_{\nu}(h)\]
+\item (224, -1): \(S^{\bullet}(E)\)~should be~\(S_{\bullet}(E)\).
+\item (225, 2), (225, 3): in and following the diagram, \(\pi_S\)~should be~\(\pi^S\).
+\item (225, 3): ``Section~4.15'' should be ``Section~4.11''.
+\item (225, 4): \(\bigsmprod^p E^*\stackrel{\iso}{\to}S^p(E)\) should be \(Y^p(E^*)\stackrel{\iso}{\to}S^p(E)\).
+\item (225, 5): \(Y(E^*)\stackrel{\iso}{\to}S(E)\) should be \(Y(E^*)\stackrel{\iso}{\to}S^{\bullet}(E)\).
+\item (225, 6): \(\bigsmprod^p E^*\iso Y^p(E)\) should be \(\bigsmprod^p E^*\iso Y^p(E^*)\).
+\item (225, 6): ``Section~4.15'' should be ``Section~5.3''.
+\item (226, 8): it should be noted that \(e_1,\ldots,e_n\) is a basis of~\(E\).
+\item (226, 12): in the displayed equation, \((f^1)^{k_1}\cdots(f^n)^{k_n}\) should be \((f^1)^{k_1}\smprod\cdots\smprod(f^n)^{k_n}\).
+\item (226, -2): \(\sigma f^i=\xi^i=f^i\) should be \(\sigma t_i=\xi^i=f^i\).
 \end{itemize}
 
 % References
